@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy Crush 2.0</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Candy Crush 2.0</h1>
+            <div class="stats">
+                <div class="stat">
+                    <label>Score:</label>
+                    <span id="score">0</span>
+                </div>
+                <div class="stat">
+                    <label>Moves:</label>
+                    <span id="moves">20</span>
+                </div>
+                <div class="stat">
+                    <label>Level:</label>
+                    <span id="level">1</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-board" id="gameBoard"></div>
+
+        <div class="controls">
+            <button id="newGameBtn" class="btn btn-primary">New Game</button>
+            <button id="pauseBtn" class="btn btn-secondary">Pause</button>
+            <button id="resetBtn" class="btn btn-secondary">Reset</button>
+        </div>
+
+        <div id="gameOverModal" class="modal hidden">
+            <div class="modal-content">
+                <h2 id="gameOverTitle">Game Over!</h2>
+                <p id="gameOverMessage"></p>
+                <p>Final Score: <strong id="finalScore">0</strong></p>
+                <button id="playAgainBtn" class="btn btn-primary">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
